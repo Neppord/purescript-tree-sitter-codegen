@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "spago test",
-    "spago": "spago"
+    "repl": "spago repl",
+    "spago": "spago",
+    "test": "spago test"
   },
   "repository": {
     "type": "git",
