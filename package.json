@@ -1,0 +1,20 @@
+{
+  "name": "purescript-tree-sitter-codegen",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "spago test",
+    "spago": "spago"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neppord/purescript-tree-sitter-codegen.git"
+  },
+  "author": "Samuel Ytterbrink",
+  "license": "MIT",
+  "homepage": "https://github.com/Neppord/purescript-tree-sitter-codegen#readme",
+  "devDependencies": {
+    "purescript": "^0.14.7",
+    "spago": "^0.20.7"
+  }
+}
