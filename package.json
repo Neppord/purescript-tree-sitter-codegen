@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
+    "start": "spago run",
     "repl": "spago repl",
     "spago": "spago",
     "test": "spago test"
@@ -16,6 +17,7 @@
   "homepage": "https://github.com/Neppord/purescript-tree-sitter-codegen#readme",
   "devDependencies": {
     "purescript": "^0.14.7",
-    "spago": "^0.20.7"
+    "spago": "^0.20.7",
+    "tree-sitter-swift": "^0.1.4"
   }
 }

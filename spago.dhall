@@ -11,7 +11,20 @@ When creating a new Spago project, you can use
 to generate this file without the comments in this block.
 -}
 { name = "my-project"
-, dependencies = [ "console", "effect", "prelude", "tidy-codegen" ]
+, dependencies =
+  [ "console"
+  , "effect"
+  , "either"
+  , "foreign"
+  , "foreign-generic"
+  , "foreign-object"
+  , "maybe"
+  , "node-buffer"
+  , "node-fs"
+  , "prelude"
+  , "tidy-codegen"
+  , "transformers"
+  ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
 }
