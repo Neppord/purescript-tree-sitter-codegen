@@ -5,14 +5,15 @@ import Prelude
 import Control.Monad.Except (runExcept)
 import Data.Either (Either(..))
 import Effect (Effect)
-import Effect.Console (logShow)
+import Effect.Console (log, logShow)
 import Node.Encoding (Encoding(..))
 import Node.FS.Sync (readTextFile)
-import TreeSitter.Codegen (parse)
+import Tidy.Codegen (printModule)
+import TreeSitter.Codegen (parse, render)
 
 main :: Effect Unit
 main = do
   json <- readTextFile UTF8 "node_modules/tree-sitter-swift/src/node-types.json"
   case runExcept (parse json) of
-    Right a -> logShow a
+    Right a -> log $ printModule $ render "TreeSitteer.Codegen.Swift" a
     Left err -> logShow err

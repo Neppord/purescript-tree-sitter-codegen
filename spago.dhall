@@ -12,18 +12,22 @@ to generate this file without the comments in this block.
 -}
 { name = "my-project"
 , dependencies =
-  [ "console"
+  [ "arrays"
+  , "console"
   , "effect"
   , "either"
   , "foreign"
   , "foreign-generic"
   , "foreign-object"
+  , "language-cst-parser"
   , "maybe"
   , "node-buffer"
   , "node-fs"
+  , "partial"
   , "prelude"
   , "tidy-codegen"
   , "transformers"
+  , "tuples"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
